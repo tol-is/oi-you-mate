@@ -1,0 +1,53 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.form{
+  width: 100%;
+}
+
+.input_row{
+  display: flex;
+  flex-direction:column;
+  max-width: 650px;
+  align-items: center;
+  margin: 0 auto 1rem auto;
+
+  @media (--below-md) {
+    & >input{
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  & >input{
+    flex:1;
+  }
+  & >button{
+    flex:0 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  @media (--above-md) {
+    flex-direction:row;
+    & >input{
+      flex:1;
+       margin-bottom: 0rem;
+    }
+    & >button{
+      flex:0 0 auto;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.error{
+  display: block;
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.success_thanks{
+  margin-bottom: 1rem;
+}

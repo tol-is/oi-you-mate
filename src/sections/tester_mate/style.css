@@ -1,0 +1,38 @@
+@import '../../styles/variables.css';
+@import '../../styles/breakpoints.css';
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-tester-mate);
+}
+
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  align-items: center;
+}
+
+.type_wrapper{
+  display: flex;
+  flex: 1 100%;
+  width: 100%;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.controls_wrapper{
+  margin-top: 1rem;
+  display: flex;
+  flex: 0;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+
+  & >*{
+    margin: 0.5em;
+    flex:1 0 25%;
+    text-align: center;
+  }
+
+}
+

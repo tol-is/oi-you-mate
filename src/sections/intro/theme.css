@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+.oi{
+  width: 100%;
+  text-align: center;
+  font-size: responsive 120px 300px; /* min-size, max-size */
+  font-range: 320px 1280px;
+  line-height: responsive 90px 300px;
+  line-height-range: 320px 1280px;
+
+  & .you{
+    color: var(--color-yellow);
+  }
+  & .mate{
+    color: var(--color-light-black);
+  }
+}
+
+

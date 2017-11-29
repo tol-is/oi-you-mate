@@ -1,0 +1,50 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+.carousel{
+  overflow: hidden;
+}
+.slideshow_btn{
+  padding:0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-size: responsive 30px 64px;
+  font-range: 320px 1280px;
+  color: var(--color-black);
+  transition: transform 0.5s var(--ease-out-expo);
+  & >* {
+    color: var(--color-black);;
+    padding: 0.5em;
+    transition: transform 0.5s var(--ease-out-expo);
+  }
+}
+
+.slideshow_btn_disabled_prev{
+  transition: transform 0.5s var(--ease-in-expo);
+  transform: translateX(-100%);
+}
+
+.slideshow_btn_disabled_next{
+  transition: transform 0.5s var(--ease-in-expo);
+  transform: translateX(100%);
+}
+
+.slideshow_btn_prev{
+  composes: slideshow_btn;
+   &:hover{
+    & >* {
+      transform: scale(1.2);
+    }
+  }
+}
+.slideshow_btn_next{
+  composes: slideshow_btn;
+  &:hover{
+    & >* {
+      transform: scale(1.2);
+    }
+  }
+}

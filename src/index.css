@@ -1,0 +1,6 @@
+
+import "styles/fonts";
+
+html, body {
+  font-family: 'Averta', sans-serif;
+}

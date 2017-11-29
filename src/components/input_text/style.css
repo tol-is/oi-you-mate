@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.input{
+  font-family: 'Averta', sans-serif;
+  display: inline-block;
+  outline: none;
+  padding: 0.15em 1em 0 0.4em;
+  height: 1.8em;
+  line-height: 1.8em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--color-white);
+  color:var(--color-black);
+  border: 0;
+  border-radius: 0;
+}

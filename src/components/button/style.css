@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.button{
+  font-family: 'Averta', sans-serif;
+  display: inline-block;
+  outline: none;
+  padding: 0.1em 1em 0 1em;
+  height: 1.8em;
+  line-height: 1.8em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--color-black);
+  color:var(--color-madang);
+  border: 0;
+  border-radius: 0;
+}

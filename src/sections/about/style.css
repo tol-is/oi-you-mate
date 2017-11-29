@@ -1,0 +1,32 @@
+@import '../../styles/variables.css';
+@import '../../styles/breakpoints.css';
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-about);
+}
+
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  padding-left:0 !important;
+  padding-right:0 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.col{
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
+}
+
+.yellow_box {
+  background-color: var(--color-yellow);
+  font-weight: 300;
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+  margin: 2em 0;
+  orphans: 3;
+  @media (--above-lg) {
+    text-align: center;
+  }
+}

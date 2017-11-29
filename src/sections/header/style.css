@@ -1,0 +1,32 @@
+@import '../../styles/easings.css';
+@import '../../styles/variables.css';
+
+.oi_header{
+  background-color: var(--color-lipstick);
+  height: 50px;
+  position: fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:center;
+  padding: 0 2rem;
+  z-index: 500;
+}
+
+.logo {
+  position: absolute;
+  left:50%;
+  top:0.3em;
+  margin-left: -0.5em;
+  background-color:white;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  font-size: 60px;
+  line-height: 1em;
+  padding: 0;
+  text-align: center;
+  font-family: 'OiYou';
+}

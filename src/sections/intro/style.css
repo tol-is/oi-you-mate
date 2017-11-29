@@ -1,0 +1,82 @@
+@import '../../styles/breakpoints.css';
+@import '../../styles/easings.css';
+@import '../../styles/variables.css';
+
+
+.testing{
+  font-family: 'OiMate';
+  font-size: 50px;
+  font-variant-ligatures: discretionary-ligatures;
+}
+.testing2{
+  font-family: 'OiMate';
+  font-size: 50px;
+}
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-intro);
+  position: relative;
+}
+
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  justify-content:center;
+  align-items: center;
+}
+
+.h1{
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-left: -0.52em;
+}
+
+.paragraph{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: 0;
+  @media (--above-sm) {
+    width: 75%;
+    max-width: 629px;
+  }
+}
+
+.by{
+  composes: paragraph;
+  color: var(--color-yellow);
+  border-bottom: 2px solid var(--color-black);
+}
+
+.description{
+  composes: paragraph;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.arrow_down{
+  outline: none;
+  border: 0;
+  margin:0;
+  padding: 0;
+  position: absolute !important;
+  z-index: 200;
+  bottom: calc(-0.35em - 3vw);
+  left: 50%;
+  margin-left: -0.5em;
+  font-size: responsive 90px 150px;
+  font-range: 320px 1280px;
+  line-height: 1.1em;
+  & >* {
+    transition: transform 0.5s var(--ease-out-expo);
+    transform: translateY(0%);
+  }
+  &:hover{
+    & >* {
+      transform: translateY(20%);
+    }
+  }
+}

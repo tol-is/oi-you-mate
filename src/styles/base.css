@@ -1,0 +1,69 @@
+@import './breakpoints.css';
+
+h1, h2, h3, h4, h5{
+  font-family: 'OiYou';
+  font-weight: 100;
+}
+
+h1{
+  font-size:3.3rem;
+}
+h2{
+  font-size:2.8rem;
+}
+
+h3{
+  font-size:2.3rem;
+}
+
+h4{
+  font-size:1.8rem;
+}
+
+h4{
+  font-size:1.3rem;
+}
+
+p{
+  margin-top:0;
+  margin-bottom: 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.base_section{
+  width:100%;
+  min-height: calc(100vh);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.base_section_content_wrap{
+  width:100%;
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 14vw 8vw;
+  overflow: hidden;
+
+  @media (--above-sm) {
+    padding: 11vw 6vw;
+  }
+
+  @media (--above-md) {
+    padding: 9vw 8vw;
+  }
+
+  @media (--above-lg) {
+    padding: 9vw 10vw;
+  }
+
+  @media (--above-xl) {
+    padding: 9vw 12.5vw;
+  }
+}
+
+
+

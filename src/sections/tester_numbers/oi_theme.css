@@ -1,0 +1,17 @@
+@import '../../styles/variables.css';
+
+.oi{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1em;
+
+  & .you{
+    color: var(--color-purple);
+  }
+  & .mate{
+    color: var(--color-white);
+  }
+}
+
+

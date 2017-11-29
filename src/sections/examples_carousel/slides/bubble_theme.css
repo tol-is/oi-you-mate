@@ -1,0 +1,18 @@
+@import '../../../styles/variables.css';
+
+.oi{
+  width: 100%;
+  text-align: center;
+  font-size: responsive 46px 90px; /* min-size, max-size */
+  font-range: 320px 1280px;
+  line-height: 0.95em;
+  /*line-height: responsive 90px 300px;
+  line-height-range: 320px 1280px;*/
+
+  & .you{
+    color: var(--color-white);
+  }
+  & .mate{
+    color: var(--color-lipstick);
+  }
+}

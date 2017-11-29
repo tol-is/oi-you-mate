@@ -1,0 +1,56 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.oi{
+  position: relative;
+  display: block;
+  min-height: 0.9em;
+  line-height: 0.9em;
+}
+
+.caps{
+  text-transform: uppercase;
+}
+
+.textfit{
+  flex: 1;
+  display: flex;
+  width: 100%;
+
+  & >*{
+    flex: 1;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.you{
+  font-family: 'OiYou';
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  outline: none;
+  white-space: pre;
+  & >p{
+    margin:0;
+  }
+}
+
+
+.mate{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  display: block;
+  font-family: 'OiMate';
+  outline: none;
+  white-space: pre;
+  & >p{
+    margin:0;
+  }
+}

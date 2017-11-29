@@ -1,0 +1,53 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-loud);
+  align-items: center;
+}
+
+/*var(--bg-page-characters);*/
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.oi{
+  width: 100%;
+  & .you{
+    color: var(--color-red);
+  }
+
+  & .mate{
+    color: var(--color-arapawa);
+  }
+}
+
+.oi_row_1{
+  font-size: responsive 84px 322px;
+  font-range: 320px 1280px;
+  line-height: 0.8em;
+}
+.oi_row_2{
+  font-size: responsive 63px 243px;
+  font-range: 320px 1280px;
+  line-height: 0.8em;
+  transform: translateY(-0.1em);
+}
+.oi_row_3{
+  font-size: responsive 38px 147px;
+  font-range: 320px 1280px;
+  line-height: 0.8em;
+  transform: translateY(-0.25em);
+}
+.oi_row_4{
+  font-size: responsive 25px 98px;
+  font-range: 320px 1280px;
+  line-height: 0.8em;
+  transform: translateY(-0.4em);
+}

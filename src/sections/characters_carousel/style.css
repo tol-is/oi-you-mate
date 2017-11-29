@@ -1,0 +1,17 @@
+@import '../../styles/variables.css';
+
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-characters-carousel);
+}
+
+/*var(--bg-page-characters);*/
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+  justify-content: center;
+}
+

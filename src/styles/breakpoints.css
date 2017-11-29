@@ -1,0 +1,14 @@
+@custom-media --above-sm (width >= 576px);
+@custom-media --above-md (width >= 768px);
+@custom-media --above-lg (width >= 992px);
+@custom-media --above-xl (width >= 1200px);
+@custom-media --above-xxl (width >= 1440px);
+
+@custom-media --below-sm (width < 576px);
+@custom-media --below-md (width < 768px);
+@custom-media --below-lg (width < 992px);
+@custom-media --below-xl (width < 1200px);
+@custom-media --below-xxl (width < 1440px);
+
+@custom-media --portrait (orientation: portrait);
+@custom-media --landscape (orientation: landscape);

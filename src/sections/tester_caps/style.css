@@ -1,0 +1,36 @@
+@import '../../styles/breakpoints.css';
+@import '../../styles/variables.css';
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-tester-caps);
+  color: var(--color-green);
+}
+
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  align-items: center;
+}
+
+.type_wrapper{
+  display: flex;
+  flex: 1 100%;
+  width: 100%;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.controls_wrapper{
+  margin-top: 1rem;
+  display: flex;
+  flex: 0;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  @media (--above-md) {
+    width: 60%;
+  }
+  @media (--above-lg) {
+    width: 50%;
+  }
+}

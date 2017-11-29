@@ -1,0 +1,30 @@
+@import '../../styles/easings.css';
+@import '../../styles/variables.css';
+
+.share_link{
+  transition: transform 0.5s var(--ease-out-expo);
+  padding: 0.3em;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+.oi{
+  width: 100%;
+  font-weight: 300;
+  & .you{
+    color: var(--color-white);
+  }
+
+  & .mate_facebook{
+    color: var(--color-facebook);
+  }
+
+  & .mate_twitter{
+    color: var(--color-twitter);
+  }
+
+  & .mate_pinterest{
+    color: var(--color-pinterest);
+  }
+}

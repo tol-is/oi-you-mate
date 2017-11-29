@@ -1,0 +1,41 @@
+:root {
+  --color-white           : #FFFFFF;
+  --color-black           : #000000;
+  --color-concrete        : #F2F2F2;
+  --color-red             : #ED1651;
+  --color-light-black     : #231F20;
+  --color-yellow          : #FFD600;
+  --color-deep-blue       : #0A1526;
+  --color-purple          : #4D13D1;
+  --color-fade-purple     : #917FFC;
+  --color-lace            : #FED5F1;
+  --color-pink            : #C21B63;
+  --color-tickle-pink     : #FD7DAC;
+  --color-lipstick        : #9C1B51;
+  --color-arapawa         : #265562;
+  --color-green           : #728F0A;
+  --color-sea-green       : #2DB475;
+  --color-turquoise-green : #A0DDB0;
+  --color-madang          : #BFFFC9;
+  --red-orange            : #FF4F4F;
+  --color-text            : var(--color-black);
+
+  --color-facebook             : #3B5998;
+  --color-twitter              : #00aced;
+  --color-pinterest            : #C92228;
+
+  --bg-page-intro : var(--color-red);
+  --bg-page-intersitial-you-mate: var(--color-lipstick);
+  --bg-page-about : var(--color-white);
+  --bg-page-cta-get-it : var(--color-black);
+  --bg-page-tester-mate : var(--color-lipstick);
+  --bg-page-characters-carousel : var(--color-white);
+  --bg-page-loud : var(--color-light-black);
+  --bg-page-examples-carousel : var(--color-white);
+  --bg-page-characters-waterfall : var(--color-white);;
+  --bg-page-tester-numbers : var(--red-orange);
+  --bg-page-tester-caps : var(--color-concrete);
+  --bg-page-tester-ligatures : var(--color-black);
+  --bg-page-download : #21C240;
+  --bg-page-footer : var(--color-deep-blue);
+}

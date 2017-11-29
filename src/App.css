@@ -1,0 +1,43 @@
+@import './styles/breakpoints.css';
+@import './styles/variables.css';
+@import './styles/fonts.css';
+
+
+html, body {
+  font-family: 'Averta', sans-serif;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+
+  @media (--above-sm) {
+    font-size: 20px;
+  }
+  @media (--above-md) {
+    font-size: 22px;
+  }
+  @media (--above-lg) {
+    font-size: 22px;
+  }
+}
+
+a, button, [role="button"]{
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color:inherit;
+  display: inline-block;
+}
+
+input{
+  font-family: 'Averta';
+}
+
+b, strong{
+  font-weight: 600;
+}
+
+.app{
+  padding-top: 50px;
+}

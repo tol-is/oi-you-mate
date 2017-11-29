@@ -1,0 +1,15 @@
+@import '../../../styles/variables.css';
+
+.oi{
+  width: 100%;
+  text-align: center;
+  font-size: responsive 80px 270px; /* min-size, max-size */
+  font-range: 320px 1280px;
+  line-height: 1em;
+  & .you{
+    color: var(--color-lace);
+  }
+  & .mate{
+    color: transparent
+  }
+}

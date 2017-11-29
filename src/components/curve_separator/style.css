@@ -1,0 +1,15 @@
+.curve{
+  position: absolute;
+  z-index:100;
+}
+
+.curve_up{
+  top:2px;
+  left:0;
+  transform:translateY(-100%) scaleY(-1);
+}
+
+.curve_down{
+  left:0;
+  top:calc(100% - 2px);
+}

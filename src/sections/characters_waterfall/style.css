@@ -1,0 +1,208 @@
+
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.oi_page{
+  composes: base_section from '../../styles/base.css';
+  background-color: var(--bg-page-characters-waterfall);
+  align-items: center;
+}
+
+/*var(--bg-page-characters);*/
+.content_wrap {
+  composes: base_section_content_wrap from '../../styles/base.css';
+  align-items: center;
+  justify-content: center;
+}
+
+.col_one{
+  padding-right: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  @media (--above-md) {
+    text-align: left;
+    padding-right: 1rem;
+  }
+}
+.col_two{
+  text-align: center;
+  @media (--above-md) {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
+
+.oi{
+  width: 100%;
+  & .you{
+    color: var(--color-black);
+  }
+
+  & .mate{
+    color: var(--color-light-black);
+  }
+}
+
+.oi_row_1_1{
+  font-size: responsive 60px 105px;
+  font-range: 768px 1280px;
+  line-height: 1.05em;
+}
+.oi_row_1_2{
+  font-size: responsive 61px 107px;
+  font-range: 768px 1280px;
+  line-height: 1.05em;
+}
+.oi_row_1_3{
+  font-size: responsive 46px 79px;
+  font-range: 768px 1280px;
+  line-height: 1.1em;
+}
+.oi_row_1_4{
+  font-size: responsive 45px 77px;
+  font-range: 768px 1280px;
+  line-height: 1.15em;
+}
+.oi_row_1_5{
+  font-size: responsive 39px 67px;
+  font-range: 768px 1280px;
+  line-height: 1.16em;
+}
+.oi_row_1_6{
+  font-size: responsive 34px 58px;
+  font-range: 768px 1280px;
+  line-height: 1.2em;
+}
+.oi_row_1_7{
+  font-size: responsive 30px 51px;
+  font-range: 768px 1280px;
+  line-height: 1.2em;
+}
+.oi_row_1_8{
+  font-size: responsive 19px 44px;
+  font-range: 576px 1280px;
+  line-height: 1.2em;
+}
+
+
+@media (--below-md) {
+  .oi_row_1_1{
+    font-size: responsive 56px 127px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_2{
+    font-size: responsive 57px 128px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_3{
+    font-size: responsive 43px 95px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_4{
+    font-size: responsive 42px 93px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_5{
+    font-size: responsive 36px 80px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_6{
+    font-size: responsive 32px 70px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_7{
+    font-size: responsive 28px 62px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_1_8{
+    font-size: responsive 24px 53px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+}
+
+
+
+
+.oi_row_2_1{
+  font-size: responsive 93px 162px;
+  font-range: 768px 1280px;
+  line-height: 1em;
+}
+.oi_row_2_2{
+  font-size: responsive 70px 120px;
+  font-range: 768px 1280px;
+  line-height: 1em;
+}
+.oi_row_2_3{
+  font-size: responsive 56px 95px;
+  font-range: 768px 1280px;
+  line-height: 1em;
+}
+.oi_row_2_4{
+  font-size: responsive 42px 72px;
+  font-range: 768px 1280px;
+  line-height: 1em;
+}
+.oi_row_2_5{
+  font-size: responsive 41px 70px;
+  font-range: 768px 1280px;
+  line-height: 1.1em;
+}
+.oi_row_2_6{
+  font-size: responsive 38px 65px;
+  font-range: 768px 1280px;
+  line-height: 1.1em;
+}
+.oi_row_2_7{
+  font-size: responsive 32px 54px;
+  font-range: 768px 1280px;
+  line-height: 1.1em;
+}
+
+
+@media (--below-md) {
+  .oi_row_2_1{
+    font-size: responsive 87px 191px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_2_2{
+    font-size: responsive 64px 141px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_2_3{
+    font-size: responsive 51px 112px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_2_4{
+    font-size: responsive 39px 85px;
+    font-range: 320px 767px;
+    line-height: 1em;
+  }
+  .oi_row_2_5{
+    font-size: responsive 38px 83px;
+    font-range: 320px 767px;
+    line-height: 1.1em;
+  }
+  .oi_row_2_6{
+    font-size: responsive 35px 78px;
+    font-range: 320px 767px;
+    line-height: 1.1em;
+  }
+  .oi_row_2_7{
+    font-size: responsive 29px 65px;
+    font-range: 320px 767px;
+    line-height: 1.1em;
+  }
+}

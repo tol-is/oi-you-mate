@@ -1,0 +1,80 @@
+@import '../../styles/variables.css';
+@import '../../styles/easings.css';
+@import '../../styles/breakpoints.css';
+
+.oi_page{
+  width:100%;
+  min-height: calc(50vh);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--bg-page-cta-get-it);
+  align-items: center;
+  overflow: hidden;
+}
+
+.cta_button{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  outline:none;
+  border:none;
+}
+
+.oi{
+  width: 100%;
+  & .you{
+    color: var(--color-white);
+  }
+
+  & .mate{
+    color: var(--color-lipstick);
+  }
+}
+
+.oi_copy{
+  text-align: center;
+  color: var(--color-white);
+  font-size: responsive 23px 60px;
+  font-range: 320px 1280px;
+}
+
+.oi_arrow{
+  text-align: center;
+  position: absolute;
+  top:50%;
+  margin-top:-0.5em;
+  color: var(--color-yellow);
+  font-size: responsive 43px 115px;
+  font-range: 320px 1280px;
+  transition: transform 0.5s var(--ease-out-expo);
+}
+
+.oi_arrow_left{
+  left:-0.65em;
+  transform: scaleX(-1);
+  @media (--above-md) {
+    left:4%;
+  }
+}
+.oi_arrow_right{
+  right:-0.65em;
+  @media (--above-md) {
+    right:4%;
+  }
+}
+
+.left_hover{
+  transform: translateX(15%) scaleX(-1);
+}
+
+.right_hover{
+  transform: translateX(-15%);
+}
