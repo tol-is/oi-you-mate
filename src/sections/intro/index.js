@@ -18,7 +18,7 @@ class IntroPage extends React.PureComponent {
           <h1 className={style.h1}>
             <OiType mate dlig zero theme={theme}>oi!</OiType>
           </h1>
-          <p className={style.by}>by Kostas Bartsokas</p>
+          <p className={style.by}>by <a target="_blank" href="https://kostasbartsokas.com/">Kostas Bartsokas</a></p>
           <p className={style.description}>A clarendonesque on steroids</p>
         </div>
         <button className={style.arrow_down} onClick={onClick}><OiArrowDown /></button>
