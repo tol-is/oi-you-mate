@@ -166,6 +166,7 @@ module.exports = {
           // in the main CSS file.
           {
             test: /\.css$/,
+            exclude: paths.appNodeModules,
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
@@ -215,6 +216,35 @@ module.exports = {
               )
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
+          },
+
+          {
+            test: /\.css$/,
+            include: paths.appNodeModules,
+            loader: ExtractTextPlugin.extract(
+              Object.assign(
+                {
+                  fallback: {
+                    loader: require.resolve('style-loader'),
+                    options: {
+                      hmr: false
+                    }
+                  },
+                  use: [
+                    {
+                      loader: require.resolve('css-loader'),
+                      options: {
+                        importLoaders: 1,
+                        modules: false,
+                        minimize: true,
+                        sourceMap: shouldUseSourceMap
+                      }
+                    }
+                  ]
+                },
+                extractTextPluginOptions
+              )
+            )
           },
 
           // "file" loader makes sure those assets get served by WebpackDevServer.
