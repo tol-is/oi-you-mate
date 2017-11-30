@@ -32,7 +32,7 @@ const decorators = [
 
 export default ({children}) => {
   return (
-    <Carousel className={style.carousel} easing="easeOutExpo" speed={400} decorators={decorators}>
+    <Carousel autoplay={true} wrapAround={true} className={style.carousel} easing="easeOutExpo" speed={400} decorators={decorators}>
       {children}
     </Carousel>
   )
