@@ -44,7 +44,7 @@ class Slider extends Component {
           <div className={style.slider_input}>
             <span className={style.slider_handle} style={handle_style}/>
             <span className={style.slider_bar}/>
-            <input onChange={this.onChange} type="range" min="0" max="100" value="50" step="1" id="fader"/>
+            <input onChange={this.onChange} type="range" min="0" max="100" value={this.state.value} step="1" id="fader"/>
           </div>
         </div>
       </div>
